@@ -1,28 +1,20 @@
-package StringProblems;
-
 import java.util.Scanner;
 public class Longestword {
-    public static void main(String[] args) {
-        try (Scanner sc = new Scanner(System.in)) {
-            System.out.println("Enter a sentence:");
-            String input = sc.nextLine();
-            System.out.println("Longest Word: " + findLongestWord(input));
-        } catch (Exception e) {
-            System.out.println("Error: " + e.getMessage());
-        }
-    }
-    public static String findLongestWord(String sentence) {
-        if (sentence == null || sentence.trim().isEmpty()) {
-            throw new IllegalArgumentException("Sentence cannot be empty.");
-        }
-        String[] words = sentence.split("\\s+");
-        String longest = "";
+    public static String LongestWord(String string1) {
+        String[] words = string1.split("\\s+");
+        String longestWord = "";
         for (String word : words) {
-            if (word.length() > longest.length()) {
-                longest = word;
+            if (word.length() > longestWord.length()) {
+                longestWord = word;
             }
         }
-        return longest;
+        return longestWord;
+    }
+      public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a sentence:");
+        String input = scanner.nextLine();
+        System.out.println("Longest Word: " + LongestWord(input));
     }
 }
 

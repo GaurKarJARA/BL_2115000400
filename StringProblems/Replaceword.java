@@ -1,7 +1,13 @@
-package StringProblems;
-
 import java.util.Scanner;
+
 public class Replaceword {
+    public static String replaceWord(String string, String oldWord, String newWord) {
+        if (string == null || oldWord == null || newWord == null) {
+            throw new IllegalArgumentException("Input strings cannot be null.");
+        }
+
+        return string.replace(oldWord, newWord);
+    }
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             System.out.println("Enter a sentence:");
@@ -15,11 +21,4 @@ public class Replaceword {
             System.out.println("Error: " + e.getMessage());
         }
     }
-    public static String replaceWord(String string, String oldWord, String newWord) {
-        if (string == null || oldWord == null || newWord == null) {
-            throw new IllegalArgumentException("Input strings cannot be null.");
-        }
-        return string.replace(oldWord, newWord);
-    }
 }
-
