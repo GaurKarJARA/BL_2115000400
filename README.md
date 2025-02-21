@@ -1,5 +1,4 @@
 # BridgeLabz_2115000030
-# My Java Learning Journey
 
 ## Day-1  🚀
 **Date:** 19-Jan-2025  
