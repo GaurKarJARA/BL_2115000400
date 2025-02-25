@@ -6,8 +6,8 @@ import java.io.*;
 import java.util.*;
 
 public class JSONCSVconvertor {
-    private static final String JSON_FILE = "C:\\Users\\Divya Singh\\IdeaProjects\\CSVJAVA\\src\\main\\java\\org\\example\\students.json";
-    private static final String CSV_FILE = "C:\\Users\\Divya Singh\\IdeaProjects\\CSVJAVA\\src\\main\\java\\org\\example\\students.csv";
+    private static final String JSON_FILE = "C:\\Users\\User\\Desktop\\BL_2115000400\\programs\\students.json";
+    private static final String CSV_FILE = "C:\\Users\\User\\Desktop\\BL_2115000400\\programs\\students.csv";
     private static final String JSON_OUTPUT_FILE = "students_output.json";
 
     public static void main(String[] args) {
