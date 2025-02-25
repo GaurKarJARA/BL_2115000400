@@ -1,4 +1,4 @@
-package org.example;
+package csv-data;
 import com.fasterxml.jackson.databind.*;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
